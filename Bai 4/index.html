@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Bai 4</title>
+    </head>
+    <body>
+        <h1>Form tao  thong tin</h1>
+        <form>
+            <div>
+            <!--input neu khong truyen type thi mac dinh la text-->
+            <p><b>Ho Va Ten</b></p>
+            <input type ="text" name="HoVaTen"> 
+            </div>
+            <div>
+            <p><b>Gioi Thieu</b></p>
+            <textarea name = "GioiThieu"></textarea>
+            </div>
+            <div>
+                <p><b>Email</b></p>
+                <input type="email" name="email">
+            </div>
+            
+            <div>
+                <p><b>So dien thoai</b></p>
+                <input name="SoDienThoai"
+                tpye="tel"
+                placeholder="Dang so 123"
+                required
+                pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]){4})">
+            </div>
+            <div>
+                <p><b>Gioi Tinh</b></p>
+                <input type="radio" name="gender" value="male">Nam<br>
+                <input type="radio" name="gender" value="female">Nu
+            </div>
+            <div>
+                <p><b>So Thich</b></p>
+                <input type="checkbox" name="SoThich" value="game">Game<br>
+                <input type="checkbox" name="SoThich" value="music">Music<br>
+                <input type="checkbox" name="SoThich" value="sport">Sport<br>
+            </div>
+            <div>
+                <p><b>Trinh Duyet Web Hay Su Dung</b></p>
+                    <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Chrome">
+                        <option value="Opera">
+                    </datalist>
+                <select name="browsers">
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                </select>
+
+            </div>
+                0 <input type="range" id="a" value="50"> 100
+        
+
+            </div>
+
+
+            <div>
+                <input type="Submit">
+                <button>Click</button>
+                <input type="Reset">
+            </div>
+            <div>
+                <iframe
+                width="560"
+                height="315"
+                src=""></iframe>
+            </div>
+            <MARQUEE>
+                <img src="/2221050432/picture/anh10.webp">
+            </MARQUEE>
+            <audio controls>
+                <source src="" type="audio/mp3">
+            </audio>
+            <video controls>
+                <source src="" type="audio/mp4">
+        
+            </video>
+                       
+            
+
+
+            
+        </form>
+    </body>
+</html>
