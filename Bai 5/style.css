@@ -1,0 +1,12 @@
+h3{
+    color:green;
+}
+#TieuDe {
+    color:pink
+}
+.TieuDe {
+    background-color: black;
+}
+h3.TieuDe2 {
+    background-color: orange;
+}
