@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+}
+
+.danh-muc {
+    background-color: #2fa4e7;
+}
+
+.danh-sach-muc {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    /* gap: 20px; */
+}
+
+.lien-ket {
+    color: white;
+    text-decoration: none;
+}
+
+.muc {
+    padding: 20px;
+
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.trai {
+    /* background-color: #2fe757; */
+    width: 30%;
+    border-right: 1.5px solid #2fa4e7;
+}
+
+.khoi-dang-nhap {
+    /* background-color: rgb(166, 163, 163); */
+    width: 100%;
+    height: 100%;
+}
+
+.khoi-thong-tin {
+    width: 100%;
+    padding: 10px 0;
+}
+
+form {
+    /* background-color: antiquewhite; */
+    width: 80%;
+    margin: 10px auto;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.quen-mat-khau {
+    
+}
+
+.quen-mat-khau-lien-ket {
+    color: #2fa4e7;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 3px;
+}
+
+.login {
+    margin-bottom: 5px;
+    background-color: #2fa4e7;
+}
+
+.login-365 {
+    background-color: #0078d4;
+}
+
+.phai {
+    /* background-color: blue; */
+    width: 80%;
+}
+
+.tin {
+    width: 95%;
+    height: 100px;
+    margin: 10px auto;
+    /* background-color: antiquewhite; */
+    border: 1px solid #2fa4e7;
+    border-radius: 5px;
+}
