@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: #2f2c38;
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.danh-sach-muc {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lien-ket-muc {
+    padding: 5px;
+    text-decoration: none;
+    color: #Dbdbdd;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ten-the-loai {
+    padding-left: 38px;
+}
+
+.muc {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.muc:hover {
+    background-color: gray;
+}
+
+.logo {
+    width: 50px;
+    padding: 0;
+}
+
+.dang-chon {
+    background-color: #4E4B52;
+}
+
+.avatar {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.banner {
+    background-color: aliceblue;
+    width: 95%;
+    height: 40vh;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.banner-anh {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.danh-sach-the-loai {
+    width: 95%;
+    height: 28vh;
+    margin-top: 20px auto;
+}
+
+.phim {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.phim-poster {
+    width: 24%;
+    height: 15vh;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.danh-sach-nhan-vat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nhan-vat {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
