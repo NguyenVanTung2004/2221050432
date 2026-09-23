@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+    <!--Internal JavaScript-->
+    <script>
+        //In ra màn hình
+        document.writeln("Hello World! <br>");
+        //Khai báo biến
+        var name= "Tùng <br>";
+
+        document.writeln(name);
+        
+        var name= "Ly <br>";
+        document.writeln(name);
+
+        var year= 2026;
+        document.writeln(year );
+
+        //Phép toán
+        var soThuNhat= 10;
+        var soThuHai= 5;
+        var ketQua= 0;
+        //cộng +
+        document.writeln(" <br>Kết quả của phép cộng là: ");
+        ketQua= soThuNhat + soThuHai
+        document.writeln( ketQua );
+        //trừ -
+        document.writeln(" <br>Kết quả của phép trừ là: ");
+        ketQua= soThuNhat - soThuHai
+        document.writeln( ketQua );
+        //nhân *
+        document.writeln(" <br>Kết quả của phép nhân là: ");
+        ketQua= soThuNhat * soThuHai
+        document.writeln( ketQua );
+        //chia /
+        document.writeln(" <br>Kết quả của phép chia là: ");
+        ketQua= soThuNhat / soThuHai
+        document.writeln( ketQua );
+        //chia phần trăm %
+        document.writeln(" <br>Kết quả của phép chia % là: ");
+        ketQua= soThuNhat % soThuHai
+        document.writeln( ketQua );
+        //++
+        document.writeln("<br>");
+        document.writeln(++soThuNhat);
+        //document.writeln("<br>")
+        //document.writeln(soThuNhat);
+        //--
+        document.writeln("<br>");
+        document.writeln(--soThuHai);
+        document.writeln("<br>");   
+        //+=
+        soThuNhat += soThuHai
+        document.writeln(soThuNhat);
+        //-=
+        soThuNhat -= soThuHai
+        document.writeln(soThuNhat);
+        //nối chuỗi
+        var ho= "Do"; 
+        document.writeln("<br>");
+        document.writeln(ho + " " + name);
+        //kiểm tra độ dài của chuỗi
+        
+        document.writeln(ho.length);
+        //kiểm tra kiểu của biến
+         document.writeln("<br>");
+        document.writeln(typeof(ho));
+        //
+        document.writeln("<br>");
+        var hoVaTen= "Luong Quang Anh";
+        document.writeln(hoVaTen.indexOf("Q"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.includes("Q"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.startsWith("Q"));
+        //thay thế kí tự
+        document.writeln("<br>");
+        document.write(hoVaTen.replace("Luong","Do"));
+        //viết hoa viết thường
+        document.writeln("<br>"); 
+        document.writeln(hoVaTen.toUpperCase());
+        document.writeln("<br>"); 
+        document.writeln(hoVaTen.toLowerCase());
+        
+        
+
+        
+
+        
+
+
+
+
+
+
+    </script>
+    <!--External Script-->
+    <script src="script.js"></script>
+
+</body>
+</html>
