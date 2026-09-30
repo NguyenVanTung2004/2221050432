@@ -87,9 +87,163 @@
         document.writeln(hoVaTen.toUpperCase());
         document.writeln("<br>"); 
         document.writeln(hoVaTen.toLowerCase());
+        //date
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.write(homNay);
+        
+
+        var ngay = new Date("1/1/2026");
+        document.writeln("<br>");
+        document.write(ngay);
+
+        var namNay = homNay.getFullYear();
+        document.writeln("<br>");
+        document.write(namNay);
+
+
+        var thangNay = homNay.getMonth();
+        document.writeln("<br>");
+        document.write(thangNay);
+
+        
+        var ngayHomNay = homNay.getDate();
+        document.writeln("<br>");
+        document.write(ngayHomNay);
+        var thu = homNay.getDay();
+        document.writeln("<br>");
+        document.write(thu);
+
+        document.writeln("<br>");
+        document.writeln("Hom nay la thu " + ++thu +  " ngay "  +ngayHomNay  +   " thang "  +  ++thangNay + " nam "   + namNay);
+
+        //Mang
+        var mang = [1,2,3,4,5];
+        document.writeln("<br>");
+        document.writeln(mang[2]);
+        document.writeln("<br>");
+        document.writeln(mang.length);
+        
+
+        var mangTen = ["Quang Anh","Ly","Thang"];
+        document.writeln("<br>");
+        document.write(mang[2]);
+
+        var mangChuoi = [1,2,3,4,5,"Quang Anh","Ly","Thang"];
+        document.writeln("<br>");
+        document.write(mangChuoi[5]);
+        
+        
+        var d = mang.concat(mang, mangTen);
+        document.writeln("<br>");
+        document.write(d);
+        document.write("<br>");
+        document.write(d.join("-"));
+        document.write("<br>");
+        //pop de lay ra phan tu cuoi cung trong mang
+        document.write(d.pop());
+        document.write("<br>");
+        d.push("Duy");
+        document.write(d);  
+        document.write("<br>");
+        document.write(mangChuoi.reverse());  
+
+        //object
+        var thongTinSinhVien = {
+            ten: "Luong Quang Anh",
+            namSinh: "2006",
+            
+            queQuan: {
+                thanhPho: "Bac Ninh",
+                phuong: "Chu",
+            }
+        };
+        document.write("<br>");
+        document.write(thongTinSinhVien.ten);
+        document.write("<br>");
+        document.write(thongTinSinhVien.queQuan.thanhPho);
+        document.write("<br>");
+        tuoi = namNay - thongTinSinhVien.namSinh;
+        document.write(tuoi);
+        thongTinSinhVien.tuoi = tuoi;
+        //console.log(thongTinSinhVien);
+        //Boolean: true nam / false nu;
+        var sinhVien = [
+            {
+                ten: "Luong Quang Banh",
+                namSinh: "2005",
+            
+                    queQuan: {
+                thanhPho: "Bac Kinh",
+                phuong: "Chung",
+
+                }
+            },
+            {
+                ten: "Luong Quang Anhh",
+            namSinh: "2003",
+            
+            queQuan: {
+                thanhPho: "Bac Ning",
+                phuong: "Chuc",
+                }
+            }
+        ]
+
+        //so sanh
+        var so1 = 5;
+        var so2 = "10";
+        document.write("<br>");
+        document.write(so1 !== so2);
+        document.write("<br>");
+        document.write(so1 == so2);
+        document.write("<br>");
+        document.write(so1 < so2);
+        document.write("<br>");
+        document.write(so1 > so2);
+        document.write("<br>");
+        
+        //=== so sanh ve ca gia tri va kieu du lieu
+        document.write(so1 === so2);
+        document.write("<br>");
+
+        if(thu >6) {
+            document.writeln("Cuoi tuan");
+
+        } 
+        
+        else if(thu ==6){
+            document.writeln("Sap duoc ngu");
+
+        }
+        
+        else{
+            document.writeln("Di hoc");
+        }
+
+        document.write("<br>");
+        var so = 1987;
+        if(so % 2 == 0){
+            document.write("So ", so, " la so chan");
+
+        }
+        else{
+            document.write("So ", so, " la so le");
+        }
+            
+
+
         
         
 
+
+
+
+
+
+
+
+        
         
 
         
