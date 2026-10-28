@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe {
+            margin: auto;
+            justify-content: center;
+        }
+        
+        
+        .danh-sach {    
+            width: 80%;
+            height: 20%;
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-between;
+        }
+        .anh {
+            width: 24%;
+            height: 100px;
+            
+        }
+
+        img {
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <!--Man xem-->
+    <div class="ten">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zC0x7Eq8SkA?si=kvIUjed4UkT03_pj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="ten"></p>    
+    <div class="danh-sach">
+        <div class="anh" onclick="chonVid(1)">
+            <img src="smh.png" alt="">
+            <p>Ten bai hat</p>
+        </div>
+        <div class="anh" onclick="chonVid(2)">
+            <img src="avta.jpg" alt="">
+            <p>Ten bai hat</p>
+        </div>
+        <div class="anh" onclick="chonVid(3)">
+            <img src="mattrang.png" alt="">
+            <p>Ten bai hat</p>
+        </div>
+        <div class="anh" onclick="chonVid(4)">
+            <img src="mattroi.png" alt="">
+            <p>Ten bai hat</p>
+        </div>
+    </div>  
+    </div>
+    <script>
+        var danhSachVid = [
+        {
+            id: 1,
+            ten: "NVT1",
+            duongDanAnh:"smh.png",
+            duongDanVideo:"https://www.youtube.com/embed/20Iyzjqdw6Q?si=JibF21DBZh-byRSl",
+
+        },
+        {
+            id: 2,
+            ten: "NVT2",
+            duongDanAnh:"avta.jpg",
+            duongDanVideo:"https://www.youtube.com/embed/qLbBTzMnLU0?si=4wNsxF2PNT27kco4",
+
+        },
+        {
+            id: 3,
+            ten: "NVT3",
+            duongDanAnh:"mattrang.png",
+            duongDanVideo:"https://www.youtube.com/embed/LTyZ6NYTKQo?si=nkzVW_fp_tiDEYV2",
+
+        },
+        {
+            id: 4,
+            ten: "NVT4",
+            duongDanAnh:"mattroi.png",
+            duongDanVideo:"https://www.youtube.com/embed/gihsWxZUi2c?si=VkYdwn4CWrIrU13q",
+
+        },
+
+    ];
+
+    function chonVid(id) {
+        for (let i = 0; i < danhSachVid.length; i++) {
+            if(danhSachVid[i].id == id){
+            document.getElementsByClassName("ten")[0].innerHTML=danhSachVid[i].ten;
+            document.getElementsByTagName("iframe")[0].src = danhSachVid[i].duongDanVideo;
+            }
+        }
+    }
+    chonVid();
+    </script>
+</body>
+</html>
