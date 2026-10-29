@@ -1,152 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="height: 50000">
     <header>
-        <nav class="danh-muc">
-            <ul class="danh-sach-muc">
-                <li class="muc"><a class="lien-ket-muc" href="#!"><img src="./anhbaitap/logo.svg" alt="" class="logo"></a></li>
-                <li class="muc dang-chon"><a class="lien-ket-muc" href="#!">Trang chủ</a></li>
-                <li class="muc"><a class="lien-ket-muc" href="#!">Nhân vật</a></li>
-                <li class="muc"><a class="lien-ket-muc" href="#!">Series</a></li>
-                <li class="muc"><a class="lien-ket-muc" href="#!">Phim</a></li>
-                <li class="muc"><a class="lien-ket-muc" href="#!">Mới&Phổ biến</a></li>
-                <li class="muc"><a class="lien-ket-muc" href="#!">Netflix của tôi</a></li>
-                <li class="muc"><a class="lien-ket-muc" href="#!">Duyệt tìm theo ngôn ngữ</a></li>
-            </ul>
-            
-        </nav>
-        <div class="chuc-nang">
-            <div class="tim-kiem"></div>
-            <div class="thong-tin">
-                <img class="avatar" src="./anhbaitap/avta.jpg" alt="">
-            </div>
+      <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+          <li class="muc">
+            <a class="lien-ket-muc" href="#!"
+              ><img src="./assets/logo.svg" alt="" class="logo"
+            /></a>
+          </li>
+          <li class="muc dang-chon">
+            <a class="lien-ket-muc" href="#!">Trang chủ</a>
+          </li>
+          <li class="muc"><a class="lien-ket-muc" href="#!">Nhân vật</a></li>
+          <li class="muc"><a class="lien-ket-muc" href="#!">Series</a></li>
+          <li class="muc"><a class="lien-ket-muc" href="#!">Phim</a></li>
+          <li class="muc">
+            <a class="lien-ket-muc" href="#!">Mới&Phổ biến</a>
+          </li>
+          <li class="muc">
+            <a class="lien-ket-muc" href="#!">Netflix của tôi</a>
+          </li>
+          <li class="muc">
+            <a class="lien-ket-muc" href="#!">Duyệt tìm theo ngôn ngữ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="chuc-nang">
+        <div class="tim-kiem"></div>
+        <div class="thong-tin">
+          <img class="avatar" src="./assets/avatar.jpg" alt="" />
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="banner">
-            <img class="banner-anh" src="./anhbaitap/banner.jpg" alt="">
+      <div class="banner" onclick="xemTrailer()">
+        <img class="banner-anh" src="./assets/banner.jpg" alt="" />
+      </div>
+      <div class="banner" style="display: none">
+        <iframe
+          class="banner-anh"
+          src="https://www.youtube.com/embed/vGvCnjY_4Tc?si=f1wDQeMXsUGVcwdC"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="danh-sach-the-loai">
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Hoạt hình</h2>
+            <div class="danh-sach-phim">
+              <div class="phim">
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(0)"
+                  src="./assets/banner.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(1)"
+                  src="./assets/zootopia.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(2)"
+                  src="./assets/doraemonnguoica.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(3)"
+                  src="./assets/doraemontihon.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(4)"
+                  src="./assets/doraemonlaudau.jpg"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="danh-sach-the-loai">
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Có thể bạn chưa xem</h2>
-                    <div class="danh-sach-phim">
-                        <div class="phim">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Phim hài hước</h2>
-                    <div class="danh-sach-phim">
-                        <div class="phim">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Hoạt hình</h2>
-                    <div class="danh-sach-phim">
-                        <div class="phim">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Mọi người đang xem</h2>
-                    <div class="danh-sach-phim">
-                        <div class="phim">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Top 10 phim Trẻ em tại Việt Nam hôm nay</h2>
-                    <div class="danh-sach-phim">
-                        <div class="phim">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div>
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Phim viễn tưởng</h2>
+            <div class="danh-sach-phim">
+              <div class="phim">
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(11)"
+                  src="./assets/ironman1.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(12)"
+                  src="./assets/endgame.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(13)"
+                  src="./assets/doomsday.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(14)"
+                  src="./assets/terminator.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(15)"
+                  src="./assets/brandnewday.jpg"
+                />
+              </div>
             </div>
-            
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Giáo dục và giải trí</h2>
-                    <div class="danh-sach-phim">
-                        <div class="phim">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                            <img class="phim-poster" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="the-loai">
-                <div class="ten-the-loai">
-                    <h2>Nhân vật</h2>
-                    <div class="danh-sach-nhan-vat">
-                        <div class="phim">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                            <img class="nhan-vat" src="./anhbaitap/banner.jpg">
-                        </div>
-                    </div>
-                </div> 
-            </div>
+          </div>
         </div>
+
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Phim hành động</h2>
+            <div class="danh-sach-phim">
+              <div class="phim">
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(16)"
+                  src="./assets/fast5.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(17)"
+                  src="./assets/fast_furious8.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(18)"
+                  src="./assets/furious7.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(19)"
+                  src="./assets/hobb_shaw.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(22)"
+                  src="./assets/thetransporter.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Phim trinh thám</h2>
+            <div class="danh-sach-phim">
+              <div class="phim">
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(20)"
+                  src="./assets/sherlock1.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(21)"
+                  src="./assets/sherlock3.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(23)"
+                  src="./assets/sherlock.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(5)"
+                  src="./assets/conan23.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(6)"
+                  src="./assets/mecungthanhphoco.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Anime</h2>
+            <div class="danh-sach-phim">
+              <div class="phim">
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(24)"
+                  src="./assets/shin.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(2)"
+                  src="./assets/doraemonnguoica.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(3)"
+                  src="./assets/doraemontihon.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(5)"
+                  src="./assets/ngoisao5canh.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(9)"
+                  src="./assets/conan.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Phim được yêu thích</h2>
+            <div class="danh-sach-phim">
+              <div class="phim">
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(0)"
+                  src="./assets/banner.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(10)"
+                  src="./assets/binhdoannguoisat.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(1)"
+                  src="./assets/zootopia.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(5)"
+                  src="./assets/conan23.jpg"
+                />
+                <img
+                  class="phim-poster"
+                  onclick="doiBanner(9)"
+                  src="./assets/conan.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="the-loai">
+          <div class="ten-the-loai">
+            <h2>Nhân vật</h2>
+            <div class="danh-sach-nhan-vat">
+              <div class="phim">
+                <img class="nhan-vat" src="./assets/banner.jpg" />
+                <img class="nhan-vat" src="./assets/sherlock_image.jpg" />
+                <img class="nhan-vat" src="./assets/shin_image.jpg" />
+                <img class="nhan-vat" src="./assets/zootopia_img.jpg" />
+                <img class="nhan-vat" src="./assets/transporter_image.jpg" />
+                <img class="nhan-vat" src="./assets/terminator_img.jpg" />
+                <img class="nhan-vat" src="./assets/ironman_img.jpg" />
+                <img class="nhan-vat" src="./assets/dom.jpg" />
+                <img class="nhan-vat" src="./assets/spiderman.jpg" />
+                <img class="nhan-vat" src="./assets/vin_diesel.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    
-    
-</body>
+    <script src="script.js"></script>
+
+    <!-- <footer class="footer">
+        <div class="cot">
+            <p>Mô tả âm thanh</p>
+            <p>Việc làm</p>
+            <p>Tùy chọn cookie</p>
+            <p>1997-2026 Netflix, Inc</p>
+        </div>
+        <div class="cot">
+            <p>Thẻ quà tặng</p>
+            <p>Điều khoản sửa dụng</p>
+            <p>Thông tin doanh nghiệp</p>
+        </div>
+        <div class="cot">
+            <p>Trung tâm đa phương tiện</p>
+            <p>Quyền riêng tư</p>
+            <p>Liên hệ với chúng tôi</p>
+        </div>
+        <div class="cot">
+            <p>Quan hệ với nhà đầu tư</p>
+            <p>Thông báo pháp lý</p>
+        </div>
+    </footer> -->
+    <!-- Bài về nhà: click vào phim nào hiện banner phim đấy -->
+  </body>
 </html>
