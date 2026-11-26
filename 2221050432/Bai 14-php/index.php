@@ -13,50 +13,73 @@
             padding: 10px;
         }
         a {
-            text-decoration: none;
+            text-decoration:  none;
             color: white;
-
         }
-        
     </style>
 </head>
 <body>
     <?php
-    session_start();
-    if (!isset($_SESSION["dangnhap"])){
-        header("Location: dangnhap.php");
-    }
+        session_start();
+        // Nếu chưa đăng nhập thì chưa chuyển trang
+        if (!isset($_SESSION['dangnhap'])) {
+            header('Location: dangnhap.php');
+        }
+        include 'connect.php';
     ?>
-    <header>
+
     <nav>
         <ul>
-            <li><a href="index.php?page_layout=trangchu">Trang chu</a></li>
-            <li><a href="index.php?page_layout=taikhoan">Tai khoan</a></li>
-            <li><a href="index.php?page_layout=danhmuc">Danh muc</a></li>
+            <li><a href="index.php?page_layout=trangchu">Trang chủ</a></li>
+            <li><a href="index.php?page_layout=taikhoan">Tài khoản</a></li>
+            <li><a href="index.php?page_layout=theloai">Thể loại</a></li>
             <li><a href="index.php?page_layout=phim">Phim</a></li>
         </ul>
     </nav>
-    </header>
 
     <?php
-        if(isset($_GET['page_layout'])) {
+        if (isset($_GET['page_layout'])) {
             $page = $_GET['page_layout'];
-            switch($page) {
-                case 'trangchu' :
+            switch ($page) {
+                case 'trangchu':
                     include 'trangchu.php';
                     break;
-                case 'taikhoan' :
+                case 'taikhoan':
                     include 'taikhoan.php';
                     break;
-                case 'danhmuc' :
-                    include 'danhmuc.php';
+                case 'theloai':
+                    include 'theloai.php';
                     break;
-                case 'phim' :
+                case 'phim':
                     include 'phim.php';
-                    break;  
-                case 'themtaikhoan' :
+                    break;
+                case 'themtaikhoan':
                     include 'themtaikhoan.php';
-                    break;    
+                    break;
+                case 'capnhattaikhoan':
+                    include 'capnhattaikhoan.php';
+                    break;
+                case 'xoataikhoan':
+                    include 'xoataikhoan.php';
+                    break;
+                case 'themtheloai':
+                    include 'themtheloai.php';
+                    break;
+                case 'capnhattheloai':
+                    include 'capnhattheloai.php';
+                    break;
+                case 'xoatheloai':
+                    include 'xoatheloai.php';
+                    break;
+                case 'themphim':
+                    include 'themphim.php';
+                    break;
+                case 'capnhatphim':
+                    include 'capnhatphim.php';
+                    break;
+                case 'xoaphim':
+                    include 'xoaphim.php';
+                    break;
             }
         }
     ?>
